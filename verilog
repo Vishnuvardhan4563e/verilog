@@ -1,0 +1,15 @@
+half adder using Behavioral Modeling:
+
+module half_adder (
+    input A,
+    input B,
+    output reg Sum,
+    output reg Carry
+);
+
+always @(*) begin
+    Sum   = A ^ B;   // XOR for sum
+    Carry = A & B;   // AND for carry
+end
+
+endmodule
